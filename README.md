@@ -9,3 +9,6 @@ my bookmarks for browsing.
 
 ## BLOG
 - [图灵测试：背景、方法、意义和现状 :: Luca's Blog](https://wlj.me/posts/turing-test/)
+
+## VPS
+- [Starryblu | All-in-One APP for Your Global Smart Finance: Fr](https://www.starryblu.com/launchIndex?inviteCode=MZYK00X)
