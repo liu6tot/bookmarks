@@ -6,7 +6,6 @@ on:
 
 jobs:
   add-bookmark:
-    if: contains(github.event.issue.labels.*.name, 'bookmark')
     runs-on: ubuntu-latest
     permissions:
       contents: write
