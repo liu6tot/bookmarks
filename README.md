@@ -8,6 +8,7 @@ my bookmarks for browsing.
 - [千万别买 VPS 就直接装脚本！2026最新3X-UI部署教程｜Reality + Hysteria2｜VPS安全加固 - YouTube](https://www.youtube.com/watch?v=-jXVz961WOk)
 
 ## BLOG
+- [歐拉數 e: 描述連續變化的基石 - HackMD](https://hackmd.io/@sysprog/euler-number)
 - [图灵测试：背景、方法、意义和现状 :: Luca's Blog](https://wlj.me/posts/turing-test/)
 
 ## VPS
