@@ -12,3 +12,6 @@ my bookmarks for browsing.
 
 ## VPS
 - [Starryblu | All-in-One APP for Your Global Smart Finance: Fr](https://www.starryblu.com/launchIndex?inviteCode=MZYK00X)
+
+## GIT
+- [MrGeDiao/shuorenhua: 说人话｜中文优先的去 AI 味改写 skill：保事实、分场景、改完可直接发。](https://github.com/MrGeDiao/shuorenhua)
