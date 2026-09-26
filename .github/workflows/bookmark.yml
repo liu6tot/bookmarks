@@ -10,36 +10,54 @@ jobs:
     permissions:
       contents: write
       issues: write
+
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out repository
+        uses: actions/checkout@v4
 
       - name: Parse issue and update README
+        shell: bash
         run: |
-          TITLE="${{ github.event.issue.title }}"
-          CATEGORY=$(echo "$TITLE" | grep -oP '(?<=\[)[^\]]+')
-          REST=$(echo "$TITLE" | sed -E 's/^\[[^]]+\]\s*//')
-          NAME=$(echo "$REST" | cut -d'|' -f1 | xargs)
-          URL=$(echo "$REST" | cut -d'|' -f2 | xargs)
+          set -euo pipefail
 
-          if [ ! -f README.md ]; then
-            echo "# 我的收藏夹" > README.md
+          TITLE="$(jq -r '.issue.title' "$GITHUB_EVENT_PATH")"
+
+          if [[ ! "$TITLE" =~ ^\[([^][]+)\][[:space:]]*(.+)[[:space:]]\|[[:space:]]*(https?://[^[:space:]]+)$ ]]; then
+            echo "Issue 标题格式不正确：$TITLE"
+            exit 1
           fi
 
-          if ! grep -q "## $CATEGORY" README.md; then
-            printf "\n## %s\n- [%s](%s)\n" "$CATEGORY" "$NAME" "$URL" >> README.md
+          CATEGORY="${BASH_REMATCH[1]}"
+          NAME="${BASH_REMATCH[2]}"
+          URL="${BASH_REMATCH[3]}"
+
+          if [ ! -f README.md ]; then
+            printf '# bookmarks\n\n' > README.md
+          fi
+
+          if ! grep -Fqx "## $CATEGORY" README.md; then
+            printf '\n## %s\n- [%s](%s)\n' "$CATEGORY" "$NAME" "$URL" >> README.md
           else
-            awk -v cat="## $CATEGORY" -v line="- [$NAME]($URL)" '
-              {print}
-              $0==cat {print line}
-            ' README.md > README.tmp && mv README.tmp README.md
+            awk -v category="## $CATEGORY" -v link="- [$NAME]($URL)" '
+              { print }
+              $0 == category { print link }
+            ' README.md > README.tmp
+            mv README.tmp README.md
           fi
 
       - name: Commit and push
+        shell: bash
         run: |
           git config user.name "bookmark-bot"
           git config user.email "actions@github.com"
           git add README.md
-          git diff --cached --quiet || git commit -m "Add bookmark: ${{ github.event.issue.title }}"
+
+          if git diff --cached --quiet; then
+            echo "README.md has no changes."
+            exit 0
+          fi
+
+          git commit -m "Add bookmark from issue #${{ github.event.issue.number }}"
           git push
 
       - name: Close issue
