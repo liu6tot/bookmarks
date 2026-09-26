@@ -1,0 +1,49 @@
+name: Add Bookmark from Issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  add-bookmark:
+    if: contains(github.event.issue.labels.*.name, 'bookmark')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Parse issue and update README
+        run: |
+          TITLE="${{ github.event.issue.title }}"
+          CATEGORY=$(echo "$TITLE" | grep -oP '(?<=\[)[^\]]+')
+          REST=$(echo "$TITLE" | sed -E 's/^\[[^]]+\]\s*//')
+          NAME=$(echo "$REST" | cut -d'|' -f1 | xargs)
+          URL=$(echo "$REST" | cut -d'|' -f2 | xargs)
+
+          if [ ! -f README.md ]; then
+            echo "# 我的收藏夹" > README.md
+          fi
+
+          if ! grep -q "## $CATEGORY" README.md; then
+            printf "\n## %s\n- [%s](%s)\n" "$CATEGORY" "$NAME" "$URL" >> README.md
+          else
+            awk -v cat="## $CATEGORY" -v line="- [$NAME]($URL)" '
+              {print}
+              $0==cat {print line}
+            ' README.md > README.tmp && mv README.tmp README.md
+          fi
+
+      - name: Commit and push
+        run: |
+          git config user.name "bookmark-bot"
+          git config user.email "actions@github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "Add bookmark: ${{ github.event.issue.title }}"
+          git push
+
+      - name: Close issue
+        uses: peter-evans/close-issue@v3
+        with:
+          comment: "✅ 已自动添加到 README.md"
