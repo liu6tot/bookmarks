@@ -2,6 +2,7 @@
 my bookmarks for browsing.
 
 ## XHACKS
+- [X 上的 AI_Explorer：“best founders list to follow on X: @levelsio → GOAT @marclou →](https://x.com/ai_explorer25/status/2103994260563644838)
 - [X 上的 Suu：“很多大学生翻墙以后，Telegram 都装了，结果还是只会到处找片看？？？ 这么大的信息库，最后只拿来加资源群，真的有点浪费 其实 TG 里](https://x.com/Suu766/status/2104116858228298187)
 - [X 上的 Tianyi Cui：“从 DeepSeek 官方 API 处统计的数据来看，约有 60% 的 DeepSeek Harness 用户使用了至少一个第三方插件。第三方插件是 DeepSeek Harness 用户体验中最具特色且不可缺少的一部分。DeepSeek Harness 团队将持续支持第三方插件生态的繁荣发展，并推动插件 API 趋于稳定，在将来减少和尽量避免破坏性更新。 https://t.co/9E8ZE2maoK” / X](https://x.com/tianyi/status/2103534313463783831)
 
