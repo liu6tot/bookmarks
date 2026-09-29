@@ -28,3 +28,6 @@ my bookmarks for browsing.
 
 ## TEXT
 - [ESL](https://www.sas.upenn.edu/~fdiebold/NoHesitations/BookAdvanced.pdf)
+
+## AI
+- [ChatGPT-USAGE](https://chatgpt.com/settings/usage?tab=overview)
