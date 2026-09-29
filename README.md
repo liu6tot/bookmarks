@@ -25,3 +25,6 @@ my bookmarks for browsing.
 
 ## INFO
 - [SEC.gov | Submit Filings](https://www.sec.gov/submit-filings)
+
+## TEXT
+- [ESL](https://www.sas.upenn.edu/~fdiebold/NoHesitations/BookAdvanced.pdf)
