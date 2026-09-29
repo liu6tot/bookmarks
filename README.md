@@ -19,6 +19,7 @@ my bookmarks for browsing.
 - [Starryblu | All-in-One APP for Your Global Smart Finance: Fr](https://www.starryblu.com/launchIndex?inviteCode=MZYK00X)
 
 ## GIT
+- [cs341-illinois/coursebook: Open Source Introductory Systems Programming Textbook](https://github.com/cs341-illinois/coursebook/issues)
 - [AI usage](https://github.com/settings/billing/ai_usage?period=3&group=7&customer=14143081&chart_selection=2&view=models)
 - [jingyaogong/minimind: 🧠 Train a 64M-parameter LLM from scra](https://github.com/jingyaogong/minimind)
 - [jserv/b3d: A a minimal software 3D renderer in C99, derived](https://github.com/jserv/b3d)
