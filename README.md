@@ -2,6 +2,7 @@
 my bookmarks for browsing.
 
 ## XHACKS
+- [X 上的 小码哥：“换掉 VPS 的垃圾 IDC 机房 IP 吧：只需几十块一年](https://x.com/xmglab/status/2100872966217371735)
 - [X 上的 mantin：“Agent 开发者注意了](https://x.com/x5cnhp/status/2105180627209465860)
 - [X 上的 柴郡🔔｜Crypto+AI Plus：“朋友们，千万不要下载盗版内容！ https://t.c](https://x.com/0xCheshire/status/2104855569257701571)
 - [X 上的 AI_Explorer：“best founders list to follow on X: @levelsio → GOAT @marclou →](https://x.com/ai_explorer25/status/2103994260563644838)
