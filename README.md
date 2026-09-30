@@ -2,6 +2,7 @@
 my bookmarks for browsing.
 
 ## XHACKS
+- [X 上的 mantin：“Agent 开发者注意了](https://x.com/x5cnhp/status/2105180627209465860)
 - [X 上的 柴郡🔔｜Crypto+AI Plus：“朋友们，千万不要下载盗版内容！ https://t.c](https://x.com/0xCheshire/status/2104855569257701571)
 - [X 上的 AI_Explorer：“best founders list to follow on X: @levelsio → GOAT @marclou →](https://x.com/ai_explorer25/status/2103994260563644838)
 - [X 上的 Suu：“很多大学生翻墙以后，Telegram 都装了，结果还是只会到处找片看？？？ 这么大的信息库，最后只拿来加资源群，真的有点浪费 其实 TG 里](https://x.com/Suu766/status/2104116858228298187)
