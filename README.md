@@ -19,6 +19,7 @@ my bookmarks for browsing.
 - [图灵测试：背景、方法、意义和现状 :: Luca's Blog](https://wlj.me/posts/turing-test/)
 
 ## VPS
+- [登录 - DNSHE-域名](https://my.dnshe.com/clientarea.php?language=chinese&autolang=1)
 - [HostDare](https://vps.hostdare.com/index.php?act=dashboard)
 - [Starryblu | All-in-One APP for Your Global Smart Finance: Fr](https://www.starryblu.com/launchIndex?inviteCode=MZYK00X)
 
