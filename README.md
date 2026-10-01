@@ -29,6 +29,7 @@ my bookmarks for browsing.
 - [MrGeDiao/shuorenhua: 说人话｜中文优先的去 AI 味改写 skill：保事实、分场景、改完可直接发。](https://github.com/MrGeDiao/shuorenhua)
 
 ## INFO
+- [剧小匠｜你的 AI 短剧剧组](https://juxiaojiang.com/)
 - [SEC.gov | Submit Filings](https://www.sec.gov/submit-filings)
 
 ## TEXT
