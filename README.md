@@ -2,6 +2,7 @@
 my bookmarks for browsing.
 
 ## XHACKS
+- [X 上的 Man ting：“2026 年想混成世界级软件工程师](https://x.com/Manorgw/status/2105624014408626433)
 - [X 上的 Flynn：从 0 到 1 自购 VPS 搭建出海节点](https://x.com/fly3nn/status/2105308049183305843)
 - [X 上的 小码哥：“换掉 VPS 的垃圾 IDC 机房 IP 吧：只需几十块一年](https://x.com/xmglab/status/2100872966217371735)
 - [X 上的 mantin：“Agent 开发者注意了](https://x.com/x5cnhp/status/2105180627209465860)
