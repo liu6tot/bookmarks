@@ -46,3 +46,6 @@ my bookmarks for browsing.
 
 ## WTF
 - [小火龙平台](https://www.shopfss.top/)
+
+## ARCH
+- [Arch manual pages](https://man.archlinux.org/)
