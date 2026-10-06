@@ -43,3 +43,6 @@ my bookmarks for browsing.
 
 ## AI
 - [ChatGPT-USAGE](https://chatgpt.com/settings/usage?tab=overview)
+
+## WTF
+- [小火龙平台](https://www.shopfss.top/)
