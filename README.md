@@ -49,6 +49,7 @@
 - [ESL](https://www.sas.upenn.edu/~fdiebold/NoHesitations/BookAdvanced.pdf)
 
 ## AI
+- [(1) X 上的 SuSu_酥酥👅：“🚨速度白嫖！OpenCode 又丢出一个匿名模型：Exo Free ！ 目前能确认的： 🔹模型 ID：opencode/exo-free 🔹限时完全免费 🔹界面标注 1M 上下文、最高 131K 输出 🔹文本 + 图像，高推理 🔹免费期数据可能被用来改进模型 厂商没公开，有人 Windows 上已跑通，也有人说比 Space Bunny 猛。…](https://x.com/NFT_Chen/status/2107715382434058313)
 - [OpenCode | 开源 AI 编程代理](https://opencode.ai/)
 - [Freebuff: The free coding agent](https://freebuff.com/)
 - [ChatGPT-USAGE](https://chatgpt.com/settings/usage?tab=overview)
