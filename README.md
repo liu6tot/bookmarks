@@ -59,3 +59,4 @@
 
 ## CC
 - [Our Colleges | LACCD](https://www.laccd.edu/our-colleges)
+- [洛杉矶社区学院、住宿与兼职联系清单](LA-housing-and-part-time-jobs.md)
