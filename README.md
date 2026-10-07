@@ -1,5 +1,12 @@
 # bookmarks
-my bookmarks for browsing.
+
+### Introduction
+
+互联网像一条流动的河，总有一些文字、想法与风景，值得停下来。
+
+这个小脚本把收藏变成一次轻轻的点星：从网页到 Issue，再落进这份清单。让偶然的相遇有处可寻，也在 GitHub 上留下一点走过互联网的印记。
+
+[安装脚本](userscripts/github-bookmarks.user.js) · [使用说明](userscripts/README.md)
 
 ## XHACKS
 - [X 上的 Man ting：“2026 年想混成世界级软件工程师](https://x.com/Manorgw/status/2105624014408626433)
