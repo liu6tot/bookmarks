@@ -49,6 +49,7 @@
 - [ESL](https://www.sas.upenn.edu/~fdiebold/NoHesitations/BookAdvanced.pdf)
 
 ## AI
+- [OpenCode | 开源 AI 编程代理](https://opencode.ai/)
 - [Freebuff: The free coding agent](https://freebuff.com/)
 - [ChatGPT-USAGE](https://chatgpt.com/settings/usage?tab=overview)
 
