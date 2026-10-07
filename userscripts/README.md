@@ -24,6 +24,8 @@
 
 ## 可选：直接创建 Issue
 
+v1.2 默认移除常见广告跟踪参数（可取消勾选），保留其他查询参数及页面锚点。生成的 Issue 标题最多 256 个 UTF-16 单元；过长网页标题会缩短，完整标题保留在正文中。若分类和网址本身过长，提示改用较短链接，不截断网址。
+
 如希望在弹窗中一次提交，打开油猴菜单 → **配置令牌：直接创建 Issue**。
 
 在 GitHub Settings → Developer settings → Personal access tokens → Fine-grained tokens 中创建令牌：

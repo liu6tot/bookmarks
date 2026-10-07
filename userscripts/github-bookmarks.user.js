@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         GitHub Bookmarks ★
 // @namespace    https://github.com/liu6tot/bookmarks
-// @version      1.1.0
+// @version      1.2.0
 // @description  从 README 读取分类，将当前网页收藏为 GitHub Issue
 // @match        http://*/*
 // @match        https://*/*
@@ -60,7 +60,7 @@
     return found;
   }
 
-  function buildIssue(category, title, url) {
+  function buildIssue(category, title, url, cleanTracking = true) {
     category = category.trim();
     if (!category || /[\[\]\\\r\n]/.test(category)) throw new Error('请选择或填写分类；分类不能包含方括号、反斜杠或换行。');
     // The existing workflow writes raw Markdown and passes strings through awk.
@@ -70,8 +70,19 @@
     try { parsed = new URL(url.trim()); } catch { throw new Error('请输入有效的网址。'); }
     if (!/^https?:$/.test(parsed.protocol)) throw new Error('网址必须以 http:// 或 https:// 开头。');
     if (parsed.username || parsed.password) throw new Error('请移除网址中的账号或密码后再收藏。');
+    if (cleanTracking) {
+      for (const key of [...parsed.searchParams.keys()]) {
+        if (/^utm_/i.test(key) || /^(gclid|dclid|fbclid|msclkid|gad_source|gad_campaignid|gbraid|wbraid)$/i.test(key)) parsed.searchParams.delete(key);
+      }
+    }
     const safeURL = parsed.href.replace(/\(/g, '%28').replace(/\)/g, '%29').replace(/\\/g, '%5C');
-    return { title: `[${category}] ${title} | ${safeURL}`, body: `- 分类：${category}\n- 网页标题：${title}\n- 链接：${safeURL}\n\n由 GitHub Bookmarks 油猴脚本创建。` };
+    const fullTitle = title;
+    const available = 256 - (`[${category}] ` + ` | ${safeURL}`).length;
+    if (available < 1) throw new Error('分类和网址过长，无法放入 Issue 标题。请使用该网页的较短原始链接；脚本不会截断网址。');
+    if (title.length > available) {
+      title = available === 1 ? '…' : title.slice(0, available - 1).replace(/[\uD800-\uDBFF]$/, '') + '…';
+    }
+    return { title: `[${category}] ${title} | ${safeURL}`, body: `- 分类：${category}\n- 网页标题：${fullTitle}\n- 链接：${safeURL}\n\n由 GitHub Bookmarks 油猴脚本创建。` };
   }
 
   GM_registerMenuCommand('配置令牌：直接创建 Issue', () => {
@@ -107,6 +118,7 @@
         <label for="new-category">新分类（可选）</label><input id="new-category" placeholder="填写后优先使用新分类" maxlength="80">
         <label for="title">收藏标题</label><input id="title" required>
         <label for="url">网页地址</label><input id="url" type="url" required>
+        <label class="hint" style="font-weight:400"><input id="clean-tracking" type="checkbox" checked style="width:auto;margin-right:6px">移除常见广告跟踪参数（utm、gclid 等）</label>
         <p class="hint mode"></p><p class="status" role="status" aria-live="polite"></p>
         <div class="actions"><button type="button" class="cancel">取消</button><button type="submit" class="primary">打开 GitHub 提交页</button></div>
       </form>
@@ -184,7 +196,7 @@
     event.preventDefault(); if (busy) return;
     try {
       const category = $('#new-category').value.trim() || selectedCategory;
-      const issue = buildIssue(category, $('#title').value, $('#url').value);
+      const issue = buildIssue(category, $('#title').value, $('#url').value, $('#clean-tracking').checked);
       const token = GM_getValue(TOKEN_KEY, '');
       if (!token) {
         const query = new URLSearchParams(issue);
