@@ -49,6 +49,7 @@
 - [ESL](https://www.sas.upenn.edu/~fdiebold/NoHesitations/BookAdvanced.pdf)
 
 ## AI
+- [Freebuff: The free coding agent](https://freebuff.com/)
 - [ChatGPT-USAGE](https://chatgpt.com/settings/usage?tab=overview)
 
 ## WTF
