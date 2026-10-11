@@ -28,6 +28,7 @@
 - [图灵测试：背景、方法、意义和现状 :: Luca's Blog](https://wlj.me/posts/turing-test/)
 
 ## VPS
+- [【合集】常用VPS脚本](https://www.nodeseek.com/post-183694-1)
 - [2026_3X-UI_Reality_Hysteria2_双协议完整部署教程](https://toothsome-package-7ce.notion.site/2026_3X-UI_Reality_Hysteria2_-35537d2f1239826fbb3701627aa5e946)
 - [登录 - DNSHE-域名](https://my.dnshe.com/clientarea.php?language=chinese&autolang=1)
 - [HostDare](https://vps.hostdare.com/index.php?act=dashboard)
