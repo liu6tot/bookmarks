@@ -69,3 +69,6 @@
 
 ## BK
 - [C语言系列 — Booklist | Z-Library](https://z-lib.sk/booklist/2562710/8d8b69/c%E8%AF%AD%E8%A8%80%E7%B3%BB%E5%88%97.html)
+
+## TG
+- [机器人 · SuuTG](https://suutg.org/bots)
