@@ -9,6 +9,7 @@
 [安装脚本](userscripts/github-bookmarks.user.js) · [使用说明](userscripts/README.md)
 
 ## XHACKS
+- [X 上的 James：“分享几个做X必须要关注的热门论坛，追热点、找信息，能给你省下不少时间 1.V2EX (https://t.co/yC5eBqYCua)：著名的程序员社区，服务器、海外支付、VPN、路由器等等，具备很高的专业深度。 https://t.co/HN70XxYn11” / X](https://x.com/Jamesmv49/status/2112365873973641605)
 - [X 上的 Oscar Garza：“你好，来自中国的 Omarchy 和 Arch 用户朋友们！来自墨西哥的问候 🇲🇽 我们的文件管理器 Strata 现已支持简体中文！🎉 我们团队里没有人会说中文，所以翻译中难免有错误，还请多多包涵。如果你愿意试用，发现任何问题请告诉我们，我们希望把它做得更好，让每个人都用得顺手！ https://t.co/gombsdheNu https://t…](https://x.com/ogsada/status/2109661622394314841)
 - [X 上的 Man ting：“2026 年想混成世界级软件工程师](https://x.com/Manorgw/status/2105624014408626433)
 - [X 上的 Flynn：从 0 到 1 自购 VPS 搭建出海节点](https://x.com/fly3nn/status/2105308049183305843)
