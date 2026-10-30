@@ -76,4 +76,5 @@
 - [机器人 · SuuTG](https://suutg.org/bots)
 
 ## ZLIB
+- [“几何之学”何以感动中国——从《几何原本》的翻译谈起](https://mathcubic.com/article/article/index/id/558/cid/29.html)
 - [math — Booklist | Z-Library](https://z-library.sk/booklist/1279045/c6dc4b/math.html)
