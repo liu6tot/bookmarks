@@ -77,5 +77,6 @@
 - [机器人 · SuuTG](https://suutg.org/bots)
 
 ## ZLIB
+- [数学分析(第一卷)第7版 | ［俄］ В. А. 卓里奇 (Владимир Антонович Зорич) 著, 李植 译 | download on Z-Library](https://z-lib.sk/book/Gz3Q7ynO5E/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90%E7%AC%AC%E4%B8%80%E5%8D%B7%E7%AC%AC7%E7%89%88.html?dsource=recommend)
 - [“几何之学”何以感动中国——从《几何原本》的翻译谈起](https://mathcubic.com/article/article/index/id/558/cid/29.html)
 - [math — Booklist | Z-Library](https://z-library.sk/booklist/1279045/c6dc4b/math.html)
