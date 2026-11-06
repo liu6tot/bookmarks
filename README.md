@@ -38,6 +38,7 @@
 - [Starryblu | All-in-One APP for Your Global Smart Finance: Fr](https://www.starryblu.com/launchIndex?inviteCode=MZYK00X)
 
 ## GIT
+- [Anarcadia/chuanban-antigravity-theme-patch: Google Antigravity 客户端界面补丁 Skill：暖纸配色三预设 + 更纱/Anthropic 三层字体 + 局部汉化 + 设置死锁修复，CDP 无侵入运行时注入](https://github.com/Anarcadia/chuanban-antigravity-theme-patch)
 - [lgse/strata: A fast, keyboard-first file manager for Linux](https://github.com/lgse/strata)
 - [BlackHatDevX/openspot-music-app](https://github.com/BlackHatDevX/openspot-music-app)
 - [cs341-illinois/coursebook: Open Source Introductory Systems Programming Textbook](https://github.com/cs341-illinois/coursebook/issues)
